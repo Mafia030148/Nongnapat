@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>สัปดาห์ที่ 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="input-section">
+        <h1>บทเรียนเรื่อง INPUT</h1>
+    </div>
+
+
+    <div class="input-text">
+        <p id="show-text">ข้อความที่อ่านได้: </p>
+        <input type="text" placeholder="กรอกข้อมูล" id="text-input">
+        <button id="read-text" onclick="readText()">ส่งข้อมูล</button>
+    </div>
+
+    <div class="input-password">
+        <p id="private-password">กรอกรหัสผ่าน</p>
+        <input type="password" placeholder="กรอกรหัสผ่าน" id="password-input">
+        <button id="read-password" onclick="readPassword()">ส่งรหัสผ่าน</button>
+    </div>
+
+    <h1>บทเรียนเรื่อง Select</h1>
+    <select id="select-text">
+        <option value="-" disabled selected>กรุณาเลือก</option>
+        <option value="A"> ตัวเลือก A </option>
+        <option value="B"> ตัวเลือก B </option>
+        <option value="C"> ตัวเลือก C </option>
+        <option value="D "> ตัวเลือก D </option>
+    </select>
+
+    <h1>Select random mem</h1>
+    <select id="select-imgmem">
+        <option value="-" disabled selected>กรุณาสุ่ม</option>
+        <option value="mem1.jpg" alt="mem1"> mem1 </option>
+        <option value="mem2.jpg" alt="mem2"> mem2 </option>
+        <option value="mem3.jpg" alt="mem3"> mem3 </option>
+        <option value="mem4.jpg" alt="mem4"> mem4 </option>
+        <option value="mem5.jpg" alt="mem5"> mem5 </option>
+    </select>
+    <div>
+        <img src="mem1.jpg" alt="mem1" id="selected-mem">
+    </div>
+
+    <script>
+        function readText() {
+            const textInput = document.getElementById('text-input')
+            const msg = textInput.value
+            const showText = document.getElementById('show-text')
+            showText.innerText = "ข้อความที่อ่านได้: " + msg
+        }
+        const textInput = document.getElementById('text-input')
+        textInput.addEventListener("change", function () {
+            alert(this.value)
+        })
+
+        function readPassword() {
+            const passwordInput = document.getElementById('password-input')
+            const password = passwordInput.value
+            alert("กรอกรหัสผ่าน" + password)
+        }
+
+        const selectText = document.getElementById('select-text')
+        selectText.addEventListener("change", function () {
+            if (this.value === "A") {
+                alert("คุณเลือก A")
+            } else {
+                alert("คุณเลือก " + this.value)
+            }
+        })
+
+        const selectedMem = document.getElementById('selected-mem')
+        const selectImgMem = document.getElementById('select-imgmem')
+        selectImgMem.addEventListener("change", function () {
+            selectedMem.src = this.value
+        })
+
+    </script>
+</body>
+
+</html>
+
+<!-- // function readTextOnChange() {
+        //     const textInput = document.getElementById('text-input')
+        //     const msg = textInput.value
+        //     const showText = document.getElementById('show-text')
+        //     showText.innerText = "ข้อความที่อ่านได้: " + msg
+        // }         -->
+
+        <!-- // selectedMem.addEventListener("change", function () {
+        //     if (this.value === "mem1.jpg") {
+        //         selectedMem.src = "mem1.jpg"
+        //     } else if (this.value === "mem2.jpg") {
+        //         selectedMem.src = "mem2.jpg"
+        //     } else if (this.value === "mem3.jpg") {
+        //         selectedMem.src = "mem3.jpg"
+        //     } else if (this.value === "mem4.jpg") {
+        //         selectedMem.src = "mem4.jpg"
+        //     } else if (this.value === "mem5.jpg") {
+        //         selectedMem.src = "mem5.jpg"
+        //     }
+        // }) -->
