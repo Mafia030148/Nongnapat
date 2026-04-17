@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title> เรียนสัปดาห์ที่ 2 </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</header>
+
+<body>
+    <div class="nav-bar raleway-uniquifier ">
+        <a>My history</a>
+        <a>My favorite songs</a>
+        <a>My favorite idols</a>
+    </div>
+
+    <div class="text-mafia raleway-uniquifier">
+        <a id="text-fullname">Mafia</a>
+        <a> who knows-Daniel Casesar</a>
+        <a> Ayase Momo</a>
+    </div>
+
+    <div class="img-mafia">
+        <img id="img-fullname" src="Ayase.jpg" alt="Ayase">
+    </div>
+
+    <div class="img-mafia">
+        <a href="https://youtu.be/FpR2IaKqF64?si=WBGHMSmO5W2S2dZi">Ayase Momo</a>
+    </div>
+
+    <>
+        <button class="raleway-uniquifier" onclick="sayHi()">Click me</button>
+
+        <div class="text-chun">
+            <input placeholder="messeng" type="text">
+            <input placeholder="email" type="email">
+            <input placeholder="password" type="password">
+            <input placeholder="tel" type="tel">
+            <input placeholder="search" type="search">
+
+        </div>
+
+        <div class="text-nong">
+            <input placeholder="number" type="number">
+            <input placeholder="hidden" type="hidden">
+            <input placeholder="month" type="month">
+            <input placeholder="date" type="date">
+            <input placeholder="time" type="time">
+            <input placeholder="url" type="url">
+        </div>
+
+            <div class="text-nong">
+                <input placeholder="time" type="time">
+                <input placeholder="week" type="week">
+                <input placeholder="datetime" type="datetime">
+                <input placeholder="datetime-local" type="datetime-local">
+                <input placeholder="radio" type="radio">
+                <input placeholder="file" type="file">
+            </div>
+
+            <div class="text-nong">
+                <input placeholder="range" type="range">
+                <input placeholder="color" type="color">
+                <input placeholder="checkbox" type="checkbox">
+                <input placeholder="button" type="button">
+                <input placeholder="image" type="image">
+            </div>
+
+            <div class="text-nong">
+                <input placeholder="submit" type="submit">
+                <input placeholder="reset" type="reset">
+            </div>
+            </div>
+            
+    <script>
+        // function sayHi() {
+        //     alert("Hello, I'm Nongnapat Phocharoen")
+        //     const textFullname = document.getElementById("text-fullname")
+        //     console.log(textFullname)
+        //     textFullname.innerText = "Hello, I'm Nongnapat Phocharoen"
+        // }
+        function sayHi() {
+            alert("Hello, I'm Nongnapat Phocharoen")
+            const imgFullname = document.getElementById("img-fullname")
+            imgFullname.src = "momo1.jpg"
+        }
+    </script>
+</body>
+</html>
+
+<!-- <script>
+    const MyName = "Nongnapat Phocharoen" //ใช้ let หรือ const ก็ได้ แต่ const จะไม่สามารถเปลี่ยนค่าได้ ค่าคือ MyName
+    function name() {
+        alert(MyName) //แสดงผลลัพธ์ของ MyName ในรูปแบบของกล่องข้อความ
+    }
+    name() //เรียกใช้ฟังก์ชัน name เพื่อแสดงกล่องข้อความที่มีค่า MyName
+</script> -->

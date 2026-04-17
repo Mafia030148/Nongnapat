@@ -1,0 +1,74 @@
+.nav-bar {
+    color: rgb(220, 230, 255);
+    background-color: rgb(183, 206, 254);
+    width: 100%;
+    height: 100%;
+    padding-left: 5%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5%;
+    border-radius: 16px;
+}
+
+.raleway-uniquifier {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+    font-size: 25px;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+    border-radius: 16px;
+    border: 2px solid #9de5f5;
+}
+
+.text-mafia {
+    color: rgb(150, 179, 252);
+    width: 100%;
+    height: 100%;
+    padding-left: 5%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5%;
+    border-radius: 16px
+}
+
+.img-mafia {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    background-color: rgb(184, 214, 255);
+    padding: 20px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    display: block;
+    margin: 20px auto;
+    background-color: rgb(101, 165, 255);
+    padding: 20px;
+    border-radius: 16px;
+    cursor: pointer;
+
+}
+
+.text-chun{
+    display: flex;
+    justify-content: center;
+}
+
+.text-nong {
+    text-align: center;
+}
