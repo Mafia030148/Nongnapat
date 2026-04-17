@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>สัปดาห์ที่ 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div>
+        <h1>เขียนโปรแกรมแสดงผลตามเงื่อนไขของผู้ใช้งาน</h1>
+    </div>
+
+    <div>
+        <p>กรุณากรอกข้อมูล</p>
+        <!-- <input id="age-input" placeholder="กรอกวันเกิด" type="date"> -->
+        <input id="number-input" placeholder="กรอกอายุ" type="number">
+        <button id="read-text" onclick="readNumber()">ตรวจสอบ</button>
+    </div>
+
+    <h1 id="show-text"></h1>
+
+    <script>
+        function readNumber() {
+            const ageInput = document.getElementById('number-input')
+            const showText = document.getElementById('show-text')
+            const age = Number(ageInput.value);
+            if (age >= 60) {
+                showText.innerText = 'วัยสูงอายุ'
+            } else if (age >= 25) {
+                showText.innerText = 'วัยทำงาน'
+            } else if (age >= 13) {
+                showText.innerText = 'วัยรุ่น'
+            } else {
+                showText.innerText = 'วัยเด็ก'
+            }
+        }
+    </script>
+</body>
+
+</html>

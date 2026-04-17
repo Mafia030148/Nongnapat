@@ -28,16 +28,24 @@
         <button id="read-password" onclick="readPassword()">ส่งรหัสผ่าน</button>
     </div>
 
-    <h1>บทเรียนเรื่อง Select</h1>
-    <select id="select-text">
-        <option value="-" disabled selected>กรุณาเลือก</option>
-        <option value="A"> ตัวเลือก A </option>
-        <option value="B"> ตัวเลือก B </option>
-        <option value="C"> ตัวเลือก C </option>
-        <option value="D "> ตัวเลือก D </option>
-    </select>
+    <div class="select-text">
+        <h1>บทเรียนเรื่อง Select</h1>
+    </div>
 
+    <div class="select-choose">
+        <p>กรุณาเลือกตัวเลือก</p>
+        <select id="select-text">
+            <option value="-" disabled selected>กรุณาเลือก</option>
+            <option value="A"> ตัวเลือก A </option>
+            <option value="B"> ตัวเลือก B </option>
+            <option value="C"> ตัวเลือก C </option>
+            <option value="D "> ตัวเลือก D </option>
+        </select>
+    </div>
+
+    <div class="select-textmem">
     <h1>Select random mem</h1>
+
     <select id="select-imgmem">
         <option value="-" disabled selected>กรุณาสุ่ม</option>
         <option value="mem1.jpg" alt="mem1"> mem1 </option>
@@ -46,10 +54,12 @@
         <option value="mem4.jpg" alt="mem4"> mem4 </option>
         <option value="mem5.jpg" alt="mem5"> mem5 </option>
     </select>
-    <div>
-        <img src="mem1.jpg" alt="mem1" id="selected-mem">
     </div>
 
+    <div class="show-mem">
+        <img src="mem1.jpg" alt="mem1" id="selected-mem">
+    </div>
+    
     <script>
         function readText() {
             const textInput = document.getElementById('text-input')
@@ -95,7 +105,7 @@
         //     showText.innerText = "ข้อความที่อ่านได้: " + msg
         // }         -->
 
-        <!-- // selectedMem.addEventListener("change", function () {
+<!-- // selectedMem.addEventListener("change", function () {
         //     if (this.value === "mem1.jpg") {
         //         selectedMem.src = "mem1.jpg"
         //     } else if (this.value === "mem2.jpg") {
